@@ -35,7 +35,7 @@ module alu(a,b,op,out);
                bit_wise_and:out=a&b;
                bit_wise_or:out=a|b;
                bit_wise_xor:out=a^b;
-               bit_wise_xnor:out=a^b;
+                bit_wise_xnor:out=~(a^b);
                shift_left:out=a<<1;
                shift_right:out=a>>1;
               endcase
